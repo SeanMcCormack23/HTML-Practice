@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+
+  <title>Image Map</title>
+</head>
+
+<body>
+  <h2>Creating an image map</h2>
+  <div class="wrap">
+    <img src="cs385spotify.png" alt="err" usemap="#spot" width="200px" height="200px" style="background-color: white">
+
+    <map name="spot">
+      <area shape="circle" coords="106,106,101" href="cs385spotify.png">
+      <!-- first two coords are the centre of the image (circle) the 3rd coord is the radius of the circle to be made clickable  -->
+    </map>
+
+    <img src="pn.png" alt="err" usemap="#pineapple" width="300px" height="300px">
+    <!-- we include the usemap attribute to link the area attribute to the image -->
+    <map name="pineapple">
+      <area shape="rect" coords="182, 64, 273, 262" target="_blank" href="https://en.wikipedia.org/wiki/SpongeBob_SquarePants">
+      <!-- the href specifies where to bring the user when they click on an image
+      "target" specifies wheter to open the link in current tab or in a new tab -->
+    </map>
+    
+
+  </div>
+</body>
+
+</html>
